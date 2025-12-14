@@ -305,24 +305,33 @@ h3 a:hover {
 
 #quant-section h2 {
   color: #150c21;
+  font-size: 1.8em;
 }
 
 .quant-intro {
   margin-top: 0.5em;
   color: #150c21;
+  font-size: 1.1em;
 }
 
 .quant-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  display: flex;
+  flex-direction: row;
   gap: 1em;
   margin-top: 1em;
 }
 
 .quant-gallery img {
   width: 100%;
+  max-width: 100%;
+  flex: 1 1 50%;
   border-radius: 0.5em;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.quant-callout {
+  color: #d00000;
+  font-weight: 600;
 }
 
 /**************************************************/
