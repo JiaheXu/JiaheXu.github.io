@@ -195,40 +195,10 @@
               <td>Hands-on teleoperation for dexterous hands and bimanual tasks, from 3D hand-point detection to retargeting with under 60ms delay</td>
               <td>Object-centric robot policies using point clouds and visual features for single-arm and bimanual manipulation tasks</td>
               <td>Training and evaluation for VLA models including SPOT, AnyPlace, iDP3, 3DDA, 3DFA, Pi0, and Pi0.5, with practical understanding of strengths and limits</td>
-              <td>Real-time multi-camera recording and depth estimation for reliable robot data collection during experiments</td>
+              <td>Real-time multi-camera recording and depth estimation for reliable robot data collection, with synchronized MP4 video segments and MCAP logs</td>
               <td>Real-to-sim tools for converting real objects into simulation assets, rescaling meshes, tracking rigid objects, and replaying calibrated scenes</td>
               <td>Voice-command pipeline connecting wake-word detection, speech recognition, an agent proxy, and TTS for natural robot interaction</td>
               <td>Auto-evaluation loop that detects rollout completion, records success or failure, and resets the robot and objects for the next trial</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="skill-table-wrap">
-          <h3>Perception</h3>
-          <table class="skill-table">
-            <tr>
-              <th>Skills</th>
-              <td>&#127760; 3D scene graph</td>
-              <td>&#128225; Sensor fusion</td>
-              <td>&#129309; Multi-robot system</td>
-              <td>&#128506;&#65039; SLAM</td>
-              <td>&#128247; VIO</td>
-            </tr>
-            <tr>
-              <th>Proficiency</th>
-              <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-experienced">Experienced</td>
-              <td class="proficiency-experienced">Experienced</td>
-            </tr>
-            <tr>
-              <th>Details</th>
-              <td>Object-centered scene representation with spatial relations and tracked poses for policy-ready robot state</td>
-              <td>Sensor fusion across stereo, depth, thermal, IMU, LiDAR, radar, and gimbal data with careful time sync and calibration</td>
-              <td>Perception pipelines deployed across Spot, custom cars, quadrotors, Franka, Mobile Aloha, and UR5 robots</td>
-              <td>3D mapping with RGB-D, LiDAR, and calibrated camera rigs, producing maps for planning and downstream robot use</td>
-              <td>Camera-IMU odometry with time sync, extrinsic calibration, feature tracking, and drift checks</td>
             </tr>
           </table>
         </div>
@@ -258,7 +228,7 @@
             </tr>
             <tr>
               <th>Details</th>
-              <td>Robot system deployment across Jetson Orin/Xavier, NUC, iPhone, VisionPro, WeChat mini-programs, and backend servers</td>
+              <td>Linux deployment workflows with Docker, SSH host adoption, javis/deployer tooling, remote code sync, service setup, and Jetson/x86 payload management</td>
               <td>Policy testing, rollout replay, and scene reset workflows in PyBullet, SAPIEN, IsaacGym/IsaacLab, MuJoCo, and Genesis</td>
               <td>Calibration for pinhole, fisheye, stereo, and thermal cameras with IMU, LiDAR, and robot frames, reducing reprojection and FK errors</td>
               <td>Edge deployment optimization with TensorRT, VPI, GStreamer, Nvidia NVMEM encoders, camera capture, and device I/O on Jetson and NUC</td>
@@ -268,6 +238,37 @@
             </tr>
           </table>
         </div>
+
+        <div class="skill-table-wrap">
+          <h3>Perception</h3>
+          <table class="skill-table">
+            <tr>
+              <th>Skills</th>
+              <td>&#127760; 3D scene graph</td>
+              <td>&#128225; Sensor fusion</td>
+              <td>&#129309; Multi-robot system</td>
+              <td>&#128207; Depth estimation</td>
+              <td>&#128506;&#65039; SLAM</td>
+            </tr>
+            <tr>
+              <th>Proficiency</th>
+              <td class="proficiency-advanced">Advanced</td>
+              <td class="proficiency-advanced">Advanced</td>
+              <td class="proficiency-advanced">Advanced</td>
+              <td class="proficiency-experienced">Experienced</td>
+              <td class="proficiency-experienced">Experienced</td>
+            </tr>
+            <tr>
+              <th>Details</th>
+              <td>Developed a bot-level 3D scene graph, combining object, place, and spatial relation layers into an LLM-ready world representation</td>
+              <td>Sensor fusion across stereo, depth, thermal, IMU, LiDAR, radar, and gimbal data with careful time sync and calibration</td>
+              <td>Merged perception outputs across heterogeneous robots, aligning LiDAR maps, point clouds, camera frames, TF trees, and shared object states into consistent robot-team context</td>
+              <td>Benchmarked stereo and monocular depth pipelines including FoundationStereo, ZED X depth, Depth Anything V2, UniDepthV2, and Metric3D for robot data collection</td>
+              <td>3D mapping with RGB-D, LiDAR, and calibrated camera rigs, producing maps for planning and downstream robot use</td>
+            </tr>
+          </table>
+        </div>
+
       </div>
     </section>
 
