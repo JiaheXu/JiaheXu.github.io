@@ -176,7 +176,8 @@
               <td>&#129504; 3D robot learning</td>
               <td>&#128065;&#65039; VLA</td>
               <td>&#128193; Data collection</td>
-              <td>&#128257; Sim-to-real &amp; real-to-sim</td>
+              <td>&#128257; Sim2real &amp; real2sim</td>
+              <td>&#128483;&#65039; Robot language control</td>
               <td>&#128260; Auto-eval</td>
             </tr>
             <tr>
@@ -186,16 +187,18 @@
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
+              <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-experienced">Experienced</td>
             </tr>
             <tr>
               <th>Details</th>
-              <td>Built from scratch: 3D hand-point detection and dexterous retargeting for dexterous hands and bimanual tasks, with &lt;60ms delay</td>
-              <td>Object-centric 3D policies using point-cloud features, SE(3) actions, and single-arm or bimanual rollouts</td>
-              <td>VLA policy interface that maps language goals and camera observations to executable robot actions</td>
-              <td>Dataset pipeline with RGB-D video, robot joint states, timestamps, action labels, and episode indexing</td>
-              <td>Sim-to-real and real-to-sim loops with calibrated robot state, camera frames, and replayable scenes</td>
-              <td>Automatic evaluation loop: detect task end, log success or failure, reset objects and robot for the next VLA rollout</td>
+              <td>VisionPro hand tracking and 3D hand-point detection with dexterous retargeting for bimanual control under 60ms latency</td>
+              <td>Developed diffusion based object centric VLA using point-clouds and visual features for single-arm and bimanual tasks</td>
+              <td>Trained and evaluated VLA models including SPOT, AnyPlace, iDP3, 3DDA, 3DFA, Pi0, and Pi0.5 on robot tasks. Familiar with their limitations and applications</td>
+              <td>Real-time multi-camera streaming and depth estimation for data collection, with language assistant using OpenWakeWord, Whisper, Deepseek, and Kokoro-TTS</td>
+              <td>Real2sim pipeline for object-centric methods: image-to-mesh, mesh rescaling, rigid-body tracking, and calibrated replay scenes</td>
+              <td>Voice-to-robot pipeline with OpenWakeWord, SileroVAD, Whisper, local agent proxy, and Kokoro-TTS for natural task commands</td>
+              <td>Auto-eval loop for VLA rollouts: detect task end, record success or failure, and reset robot and objects for the next trial</td>
             </tr>
           </table>
         </div>
@@ -221,11 +224,11 @@
             </tr>
             <tr>
               <th>Details</th>
-              <td>3D scene graph with object nodes, spatial relations, object pose tracking, and manipulation-ready state</td>
-              <td>Time-synced camera, IMU, LiDAR, and thermal streams with calibrated intrinsics and extrinsics</td>
-              <td>Shared perception stack for arms, drones, and mobile robots, with ROS topics and common map frames</td>
-              <td>SLAM pipelines for RGB-D and LiDAR mapping, pose graph updates, loop closure, and map export</td>
-              <td>VIO with camera-IMU time sync, extrinsic calibration, feature tracking, and drift checks</td>
+              <td>Object-centric scene model with object nodes, spatial relations, rigid-body tracking, and manipulation-ready state</td>
+              <td>Time-synced stereo, depth, thermal, IMU, LiDAR, radar, and gimbal streams with calibrated intrinsics and extrinsics</td>
+              <td>Shared perception stack across Spot, custom cars, quadrotors, Franka, Mobile Aloha, and UR5 with ROS topics and common frames</td>
+              <td>3D mapping and SLAM pipelines from RGB-D, LiDAR, and calibrated multi-camera rigs, with map export for planning</td>
+              <td>Camera-IMU odometry with time synchronization, extrinsic calibration, feature tracking, and drift checks</td>
             </tr>
           </table>
         </div>
@@ -235,13 +238,13 @@
           <table class="skill-table">
             <tr>
               <th>Skills</th>
-              <td>&#9881;&#65039; ROS1/ROS2</td>
               <td>&#128640; System deployment</td>
-              <td>&#128451;&#65039; Large dataset management</td>
               <td>&#127918; Simulation</td>
               <td>&#127919; Calibration</td>
               <td>&#128187; Edge computing</td>
               <td>&#9201;&#65039; Real-time control</td>
+              <td>&#127909; Video streaming</td>
+              <td>&#128451;&#65039; Large dataset management</td>
             </tr>
             <tr>
               <th>Proficiency</th>
@@ -250,18 +253,18 @@
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-advanced">Advanced</td>
+              <td class="proficiency-experienced">Experienced</td>
+              <td class="proficiency-experienced">Experienced</td>
             </tr>
             <tr>
               <th>Details</th>
-              <td>ROS1/ROS2 deployment with nodes, launch files, TF trees, parameters, logging, and topic debugging</td>
-              <td>Full robot stack deployment on Jetson Orin/Xavier, NUC, iPhone, and Vision Pro interfaces</td>
-              <td>Large dataset tools for rosbag storage, episode indexing, metadata search, and training split generation</td>
-              <td>Simulation environments in PyBullet, SAPIEN, Isaac, MuJoCo, and Genesis with reset and evaluation scripts</td>
-              <td>Calibration for pinhole, fisheye, stereo, thermal cameras, IMU, LiDAR, and robot frames</td>
-              <td>Onboard inference, camera capture, device I/O, and service monitoring on edge robot computers</td>
-              <td>Real-time control loops with command limits, hardware feedback, watchdogs, and low-latency message flow</td>
+              <td>Robot stack deployment on Jetson Orin/Xavier, NUC, iPhone, VisionPro, WeChat mini-program, and server backends</td>
+              <td>Simulation and evaluation in PyBullet, SAPIEN, IsaacGym/IsaacLab, MuJoCo, and Genesis, with reset scripts and policy replay</td>
+              <td>Kalibr-based calibration for pinhole, fisheye, stereo, thermal cameras, IMU, LiDAR, and robot frames; reduced reprojection and FK errors</td>
+              <td>Edge acceleration with TensorRT, VPI, GStreamer, Nvidia NVMEM encoders, camera capture, and device I/O on Jetson/NUC</td>
+              <td>Real-time Aloha end-effector controller from scratch at up to 50Hz, with command limits, feedback, watchdogs, and low-latency flow</td>
+              <td>Low-latency robot video streaming over radio using DDS, GStreamer, and Nvidia NVMEM encoders</td>
+              <td>Large robot dataset comparison and management across RH20T, Open X-Embodiment, BridgeData, rosbags, metadata, and train/test splits</td>
             </tr>
           </table>
         </div>
