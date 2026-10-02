@@ -296,6 +296,93 @@ h3 a:hover {
 }
 
 /**************************************************/
+/* Skills tables. */
+
+#skills-section {
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
+
+#skills-section h2 {
+  color: #150c21;
+  font-size: 1.8em;
+}
+
+.skills-tables {
+  margin-top: 0.5em;
+  width: min(83.6em, calc(100vw - 4em));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill-table-wrap {
+  margin-top: 1.5em;
+}
+
+.skill-table-wrap h3 {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skill-table {
+  width: 100%;
+  border: 1px solid #a0a8b0;
+  border-collapse: separate;
+  border-radius: 6px;
+  border-spacing: 0;
+  overflow: hidden;
+  table-layout: fixed;
+  font-size: 0.95em;
+  line-height: 1.4em;
+}
+
+.skill-table th,
+.skill-table td {
+  border-right: 1px solid #a0a8b0;
+  border-bottom: 1px solid #a0a8b0;
+  padding: 0.65em 0.75em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.skill-table tr:last-child th,
+.skill-table tr:last-child td {
+  border-bottom: none;
+}
+
+.skill-table th:last-child,
+.skill-table td:last-child {
+  border-right: none;
+}
+
+.skill-table th {
+  width: 8.5em;
+  color: #150c21;
+  font-weight: 700;
+}
+
+.skill-table td {
+  color: #5f6870;
+}
+
+.skill-table td.proficiency-pro {
+  color: #064e3b;
+  font-weight: 700;
+}
+
+.skill-table td.proficiency-advanced {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.skill-table td.proficiency-experienced {
+  color: #86a873;
+  font-weight: 700;
+}
+
+
+/**************************************************/
 /* Quant trading results section. */
 
 #quant-section {
