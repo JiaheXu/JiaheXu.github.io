@@ -176,8 +176,8 @@
               <td>&#129504; 3D robot learning</td>
               <td>&#128065;&#65039; VLA</td>
               <td>&#128193; Data collection</td>
-              <td>&#128260; Env auto-reset</td>
               <td>&#128257; Sim-to-real &amp; real-to-sim</td>
+              <td>&#128260; Auto-eval</td>
             </tr>
             <tr>
               <th>Proficiency</th>
@@ -185,17 +185,17 @@
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-experienced">Experienced</td>
               <td class="proficiency-advanced">Advanced</td>
+              <td class="proficiency-experienced">Experienced</td>
             </tr>
             <tr>
               <th>Details</th>
-              <td>Hands-on teleoperation for dexterous hands and two-arm tasks</td>
-              <td>3D policies for object-based single-arm and dual-arm manipulation</td>
-              <td>Vision-language actions linked to robot task goals</td>
-              <td>Clean robot demos with video, robot state, and action labels</td>
-              <td>Auto-reset environment after each VLA rollout, success or failure</td>
-              <td>Policy transfer both from simulation to real robots and from real data back to simulation</td>
+              <td>Built from scratch: 3D hand-point detection and dexterous retargeting for dexterous hands and bimanual tasks, with &lt;60ms delay</td>
+              <td>Object-centric 3D policies using point-cloud features, SE(3) actions, and single-arm or bimanual rollouts</td>
+              <td>VLA policy interface that maps language goals and camera observations to executable robot actions</td>
+              <td>Dataset pipeline with RGB-D video, robot joint states, timestamps, action labels, and episode indexing</td>
+              <td>Sim-to-real and real-to-sim loops with calibrated robot state, camera frames, and replayable scenes</td>
+              <td>Automatic evaluation loop: detect task end, log success or failure, reset objects and robot for the next VLA rollout</td>
             </tr>
           </table>
         </div>
@@ -205,30 +205,27 @@
           <table class="skill-table">
             <tr>
               <th>Skills</th>
-              <td>&#128506;&#65039; SLAM</td>
-              <td>&#128247; VIO</td>
-              <td>&#129309; Multi-robot system</td>
               <td>&#127760; 3D scene graph</td>
               <td>&#128225; Sensor fusion</td>
-              <td>&#127919; Object-centric perception</td>
+              <td>&#129309; Multi-robot system</td>
+              <td>&#128506;&#65039; SLAM</td>
+              <td>&#128247; VIO</td>
             </tr>
             <tr>
               <th>Proficiency</th>
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
               <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-advanced">Advanced</td>
-              <td class="proficiency-advanced">Advanced</td>
+              <td class="proficiency-experienced">Experienced</td>
+              <td class="proficiency-experienced">Experienced</td>
             </tr>
             <tr>
               <th>Details</th>
-              <td>3D maps from RGB-D, LiDAR, and calibrated cameras</td>
-              <td>Camera-IMU odometry with time sync and extrinsics</td>
-              <td>Shared perception stacks for arms, drones, and mobile robots</td>
-              <td>Object-level scene graphs for robot reasoning</td>
-              <td>Camera, IMU, LiDAR, and thermal sensor fusion</td>
-              <td>Object pose and relation estimates for robot policies</td>
+              <td>3D scene graph with object nodes, spatial relations, object pose tracking, and manipulation-ready state</td>
+              <td>Time-synced camera, IMU, LiDAR, and thermal streams with calibrated intrinsics and extrinsics</td>
+              <td>Shared perception stack for arms, drones, and mobile robots, with ROS topics and common map frames</td>
+              <td>SLAM pipelines for RGB-D and LiDAR mapping, pose graph updates, loop closure, and map export</td>
+              <td>VIO with camera-IMU time sync, extrinsic calibration, feature tracking, and drift checks</td>
             </tr>
           </table>
         </div>
@@ -258,13 +255,13 @@
             </tr>
             <tr>
               <th>Details</th>
-              <td>ROS nodes, launch files, TF trees, and message pipelines</td>
-              <td>Robot software on Jetson, NUC, iPhone, and Vision Pro</td>
-              <td>Organized robot episodes, sensor bags, and metadata</td>
-              <td>Simulation in PyBullet, SAPIEN, Isaac, MuJoCo, and Genesis</td>
-              <td>Camera, IMU, thermal, stereo, and LiDAR calibration</td>
-              <td>Onboard inference and device I/O on robot computers</td>
-              <td>Simple robot control loops with hardware feedback</td>
+              <td>ROS1/ROS2 deployment with nodes, launch files, TF trees, parameters, logging, and topic debugging</td>
+              <td>Full robot stack deployment on Jetson Orin/Xavier, NUC, iPhone, and Vision Pro interfaces</td>
+              <td>Large dataset tools for rosbag storage, episode indexing, metadata search, and training split generation</td>
+              <td>Simulation environments in PyBullet, SAPIEN, Isaac, MuJoCo, and Genesis with reset and evaluation scripts</td>
+              <td>Calibration for pinhole, fisheye, stereo, thermal cameras, IMU, LiDAR, and robot frames</td>
+              <td>Onboard inference, camera capture, device I/O, and service monitoring on edge robot computers</td>
+              <td>Real-time control loops with command limits, hardware feedback, watchdogs, and low-latency message flow</td>
             </tr>
           </table>
         </div>
