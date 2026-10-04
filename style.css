@@ -97,6 +97,47 @@ h1 {
   float: left;
 }
 
+#intro-text h1 {
+  display: inline-block;
+  position: relative;
+  color: #160b2d;
+  font-weight: 700;
+}
+
+#intro-text h1:after {
+  content: '';
+  position: absolute;
+  left: 0.05em;
+  right: 0.05em;
+  bottom: 0.75em;
+  height: 0.28em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #22b8cf, #7c3aed 48%, #f59e0b);
+  opacity: 0.32;
+  z-index: -1;
+}
+
+#intro-text p {
+  color: #241a33;
+  font-size: 1.03em;
+  line-height: 1.55em;
+}
+
+#intro-text a {
+  color: #075985;
+  font-weight: 600;
+  padding: 0.05em 0.25em;
+  border-radius: 0.35em;
+  background: linear-gradient(120deg, rgba(34, 184, 207, 0.12), rgba(124, 58, 237, 0.1));
+  transition: color 160ms ease, background 160ms ease;
+}
+
+#intro-text a:hover {
+  color: #5b21b6;
+  border-bottom: none;
+  background: linear-gradient(120deg, rgba(34, 184, 207, 0.22), rgba(245, 158, 11, 0.18));
+}
+
 #intro-image {
   margin: 2em 0 0 2em;
   width: 12em;
